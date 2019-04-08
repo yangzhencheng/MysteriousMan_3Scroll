@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>MysteriousMan_3Scroll</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="MysteriousMan_3Scroll/MysteriousMan_3Scroll.js"></script>
+    <link rel="stylesheet" type="text/css" href="MysteriousMan_3Scroll/MysteriousMan_3Scroll.css" />
+</head>
+</head>
+<body>
+    <div id="showScroll" style="margin: 0px auto; margin-top: 120px;"></div>
+    <div style="text-align: center; margin-top: 30px;">
+        <input type="button" id="btnProv" value="上一个" />
+        <input type="button" id="btnBack" value="下一个" />
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+var srollJson = {
+    "imgList":
+    [
+        {
+            "src": "images/1.jpg",
+            "info": "1.jpg"
+        },
+        {
+            "src": "images/2.jpg",
+            "info": "2.jpg"
+        },
+        {
+            "src": "images/3.jpg",
+            "info": "3.jpg"
+        },
+        {
+            "src": "images/4.jpg",
+            "info": "4.jpg"
+        }
+    ],
+    "imgWidth": "334",
+    "imgHeight": "244",
+    "vectorWidth": "417", 
+    "showInfo": "all",
+    "arrShow": "yes"
+};
+
+
+var fun3Scroll = mysteriousMan_3Scroll("showScroll", srollJson);
+
+$("#btnProv").bind("click", function(){fun3Scroll.provImg();});
+$("#btnBack").bind("click", function(){fun3Scroll.backImg();});
+</script>
