@@ -1,0 +1,7 @@
+.mm3scroll {clear: both; overflow: hidden; border: 1px solid #EEE;}
+.mm3scroll div.v {float: left; margin: 0px auto; overflow: hidden;}
+.mm3scroll div.info {position: relative; top: -31px; text-indent: 1em; font-size: 12px; line-height: 26px; color: White; background-color: Black;}
+.mm3scroll div.noshow {display: none;}
+.mm3scroll .leftArr {background: url('images/leftArr.png') no-repeat; background-position: center center;}
+.mm3scroll .rightArr {background: url('images/rightArr.png') no-repeat; background-position: center center;}
+
